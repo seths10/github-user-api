@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: #0C0D14;
+    background-color: #cfd1dd;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 700px;
+
+}
+
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border: none;
+    color: #0C0D14;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154,160,185,0.05), 0 15px 40px rgba(0,0,0,0.1);
+
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+.user-form input::placeholder {
+    color: #bec1ce;
+}
+
+.card {
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154,160,185,0.05), 0 15px 40px rgba(0,0,0,0.1);
+    display: flex;
+    color: #0C0D14;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 3px solid #0C0D14;
+    height: 7rem;
+    width: 7rem;
+}
+
+.user-info {
+    color: #0C0D14;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info .links {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info .links .btn {
+    background-color: #0C0D14;
+    padding: 10px;
+    border-radius: 0.4rem;
+}
+
+.user-info .links .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-info ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+    margin-bottom: 1.2rem;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repos {
+    text-decoration: none;
+    color: #eee;
+    background-color: #0C0D14;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.1rem;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+}
+
+@media (max-width: 755px) {
+    .title {
+        font-weight: 500;
+    }
+
+    .user-form {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 1.8rem ;
+        font-weight: 300;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+}
